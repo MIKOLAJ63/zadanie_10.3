@@ -1,0 +1,46 @@
+img {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  display: block;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  width: 2000px;
+}
+li {
+  display: inline;
+}
+ul>li {
+  list-style: none;
+  float: left;
+}
+#carousel {
+  border: solid;
+  width: 400px;
+  overflow: hidden;
+  margin: 0 auto;
+ }
+i {
+	opacity: 0.75;
+	position: absolute;
+	top: 75%;	
+	transition: 1s;
+}
+.fa-chevron-right {
+	left: 64.5%;
+  top: 70%;
+}
+.fa-chevron-left {
+	right: 64.5%;
+  top: 70%;
+} 
+.fa:hover {
+	opacity: 1;
+	transition: opacity 1s;
+	cursor: pointer;
+}
+.slides-list {
+	max-width: 2000px;	
+}
