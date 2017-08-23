@@ -21,16 +21,14 @@ $(function(){
 $('#move-left').on('click', function(){
 		var $last = $('#carousel li:last');
 		$last.remove().css({ 'margin-left': '0px' });
-		$('#carousel  li:first').before($last);
+		$('#carousel  ul:first').before($last);
 		$last.animate({ 'margin-left': '0px' }, 500);
-    checkMark();
 	});
 
 	$('#move-right').on('click', function(){
 		var $first = $('#carousel li:first');
 		$first.animate({ 'margin-left': '-400px' }, 500, function() {
 			$first.remove().css({ 'margin-left': '0px' });
-			$('#carousel li:last').after($first);
+			$('#carousel ul:last').after($first);
 		});
-    checkMark();
 	});
